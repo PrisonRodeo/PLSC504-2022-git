@@ -1,7 +1,6 @@
-#########################################################
-# GSERM - St. Gallen (2022)
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+# PLSC 504 -- Fall 2022
 #
-# Analyzing Panel Data
 # Prof. Christopher Zorn
 #
 # Code to grab & create data from the World Bank's
@@ -27,7 +26,7 @@ library(WDI)
 # setwd("~/AllMyStuff")
 #
 # or whatever.
-#######################################################
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 # Get the relevant data / indicators (add variables
 # as you wish...):
 
@@ -94,9 +93,9 @@ rm(nc,sb,se)
 
 write.csv(wdi,"WDI.csv",row.names=FALSE)
 
-####################################################
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 # Now grab some different variables for the 
-# day on causal inference...
+# part on causal inference...
 
 wdi2<-WDI(country="all",
          indicator=c("RuralPopulation"="SP.RUR.TOTL.ZS", # Rural Population (% of total)
